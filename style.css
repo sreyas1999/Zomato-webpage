@@ -1,0 +1,508 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Merriweather', sans-serif;
+  background-color: #ebf2ff;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #fff;
+  height: 50px;
+  box-shadow: 0px 2px 8px rgb(0 0 0 / 25%);
+}
+
+.navbar__brand {
+  width: 100px;
+}
+
+.navbar__logo {
+  width: 100%;
+}
+
+.button__primary {
+  background-image: linear-gradient(to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%);
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition-duration: 0.5s;
+}
+
+.button__primary:hover {
+  background-image: linear-gradient(to right,
+      #dd2476 0%,
+      #ff512f 60%);
+  transform: rotate(-360deg);
+  cursor: pointer;
+}
+
+.container {
+  max-width: 100%;
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 10px;
+  background-image: url(assets/svg/heroShape.svg), url(assets/svg/herobgpattren.svg);
+  background-size: 90%;
+  background-repeat: no-repeat;
+}
+
+.hero__image__container {
+  width: 100%;
+}
+
+.hero__image {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+.hero__text {
+  font-weight: 800;
+  font-size: 30px;
+  margin: 90px 0;
+  margin-bottom: 0px;
+  color: #1d3557
+}
+
+.food__card__description {
+  padding: 15px;
+}
+
+.food__card {
+  background-color: #F9F9F9;
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px;
+  ;
+}
+
+.food__card__image__container {
+  width: 100%;
+}
+
+.food__image {
+  border-radius: 8px 8px 0 0;
+  width: 100%;
+}
+
+.explore__menu__text {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  color: #1d3557;
+}
+
+.explore__button {
+  font-size: 20px;
+  font-family: Merriweather, sans-serif;
+  margin-top: 22px;
+  padding: 3% 40%;
+  text-align: center;
+  background-image: linear-gradient(to right,
+      #ff512f 0%,
+      #dd2476 51%,
+      #ff512f 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+}
+
+.explore__button:hover {
+  background-image: linear-gradient(to right,
+      #dd2476 0%,
+      #ff512f 51%,
+      #dd2476 100%);
+  cursor: pointer;
+}
+
+.explore__restraunts__container {
+  margin-top: 20%;
+}
+
+.explore__restraunts__text {
+  margin-bottom: 5%;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 25px;
+  color: #1d3557;
+}
+
+.row1 {
+  display: flex;
+  align-items: baseline;
+  margin-right: 10%;
+  margin-bottom: 5%;
+  margin-left: 5%;
+}
+
+.row2 {
+  display: flex;
+  align-items: flex-start;
+  grid-gap: 10px;
+  margin-left: 5%;
+}
+
+.restraunt__image {
+  width: 50%;
+  border-radius: 8px;
+}
+
+#restraunt1 {
+  float: right;
+  width: 110%;
+  height: 120px;
+  margin-right: 5%;
+}
+
+#restraunt3 {
+  height: 110px;
+}
+
+.email__container {
+  margin-top: 15%;
+}
+
+.email__heading__text {
+  font-size: 25px;
+  font-weight: bolder;
+  color: #1d3557;
+}
+
+.email__input {
+  margin-top: 3%;
+  font-size: 15px;
+  height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  border-width: thin;
+  background-color: #FCEDF0;
+  border-color: #F0BECD;
+}
+
+.email__submit {
+  height: 30px;
+  border: none;
+  margin-left: 2%;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 5px;
+  width: 100px;
+  background-image: linear-gradient(to right,
+      #ff512f,
+      #dd2476);
+}
+
+.email__submit:hover {
+  background-image: linear-gradient(to right,
+      #dd2476,
+      #ff512f);
+  cursor: pointer;
+}
+
+.quote__container {
+  margin-top: 5%;
+  padding-top: 10%;
+  height: 150px;
+  background-image: url(assets/quotebg.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+
+.quote__text {
+  color: #fff;
+  opacity: 100%;
+  padding: 3%;
+  text-align: center;
+  font-weight: bolder;
+}
+
+.footer__division {
+  margin-top: 5%;
+  background-image: linear-gradient(to right,
+      #ff512f,
+      #dd2476,
+      #ff512f);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 24px 24px 0 0;
+}
+
+.footer__content__list {
+  list-style: none;
+}
+
+.footer__logo {
+  filter: brightness(0) invert(1);
+}
+
+@media (min-width:768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 10px 30px;
+  }
+
+  .hero__container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .button__primary {
+    padding: 8px;
+    height: 33px;
+    width: 105px;
+    border: none;
+  }
+
+  .navbar__logo {
+    padding-left: 0px;
+  }
+
+  .container {
+    background-image: url(assets/svg/heroShape.svg), url(assets/svg/herobgpattren.svg);
+    background-size: 52%;
+    background-repeat: no-repeat;
+    background-position: 99% 1%;
+  }
+
+  .explore__menu__lists {
+    margin-top: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+  }
+
+  .explore__menu__container {
+    margin-top: 100px;
+  }
+
+  #pizza__card {
+    margin-bottom: 20px;
+  }
+
+  .explore__menu__gradient__bg {
+    margin-top: 75%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    height: 70%;
+    width: 100%;
+    transform: skewY(-5deg);
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    z-index: -3;
+  }
+
+  .explore__button {
+    background: none;
+    padding: 3% 42%;
+  }
+
+  .explore__button:hover {
+    color: red;
+    background-image: linear-gradient(to right,
+        #f9f9f9 0%,
+        #f9f9f9 51%,
+        #f9f9f9 100%);
+  }
+
+  .row1 {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5%;
+  }
+
+  .row2 {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 5%;
+    grid-gap: 10px;
+  }
+
+  .restraunt__image {
+    width: 50%;
+    border-radius: 8px;
+  }
+
+  .explore__restraunts__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .explore__restraunts__image__container {
+    width: 45%;
+  }
+
+  .explore__restraunts__text {
+    font-size: 30px;
+    margin-top: 15%;
+    font-weight: bolder;
+  }
+
+  #restraunt1 {
+    float: right;
+    width: 95%;
+    height: 95%;
+    margin-right: 5%;
+  }
+
+  #restraunt2 {
+    width: 50%;
+    display: flex;
+    float: right;
+  }
+
+  #restraunt3 {
+    width: 37%;
+  }
+
+  .email__container {
+    padding-left: 25%;
+  }
+
+  .email__input {
+    width: 300px;
+  }
+
+  .quote__container {
+    border-radius: 10px;
+    background-size: cover;
+  }
+
+  .quote__text {
+    font-size: 25px;
+    text-align: center;
+    ;
+  }
+
+  .footer__division {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    max-width: 70%;
+    background-image: url(assets/svg/heroShape.svg), url(assets/svg/herobgpattren.svg);
+    background-size: 530px;
+    background-repeat: no-repeat;
+    background-position: 555px 7px;
+  }
+
+  .explore__menu__lists {
+    margin-top: 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 25px;
+  }
+
+  .explore__menu__container {
+    margin-top: 100px;
+  }
+
+  .navbar__brand {
+    width: 150px;
+  }
+
+  .button__primary {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+  }
+
+  .hero__description {
+    width: 100%;
+  }
+
+  .hero__text {
+    font-weight: bold;
+    font-size: 40px;
+    margin-right: 40px;
+  }
+
+  .explore__menu__text {
+    font-size: 48px;
+  }
+
+  .navbar {
+    padding-right: 80px;
+  }
+
+  #pizza__card {
+    margin-bottom: 20px;
+  }
+
+  .explore__menu__gradient__bg {
+    position: absolute;
+    height: 81%;
+    width: 80%;
+    margin-left: 10%;
+    ;
+    transform: skewY(-5deg);
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    z-index: -3;
+    margin-top: 48% !important;
+  }
+
+  #restraunt3 {
+    width: 38%;
+    height: 40%;
+  }
+
+  .explore__restraunts__image__container {
+    width: 70%;
+  }
+
+  .explore__restraunts__container {
+    margin-top: 5%;
+    width: 115%;
+  }
+
+  .explore__restraunts__text {
+    font-size: 50px;
+  }
+
+  .explore__button:hover {
+    color: red;
+    background-image: linear-gradient(to right,
+        #f9f9f9 0%,
+        #f9f9f9 51%,
+        #f9f9f9 100%);
+  }
+
+  .email__container {
+    margin-top: 7%;
+  }
+
+  .email__heading__text {
+    font-size: 50px;
+  }
+
+  .email__submit {
+    height: 50px;
+    width: 150px;
+  }
+
+  .quote__container {
+    border-radius: 10px;
+    background-size: cover;
+  }
+}
